@@ -1,0 +1,13 @@
+docker run -it -v /Bspace:/app --gpus '"device=0,1,2"' speech_enhance
+
+cd /app/xionglizhu/henan/step2/DeepFilterNet
+
+安装报错1：
+A：
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source "$HOME/.cargo/env"
+apt install -y build-essential
+
+
+安装报错2：Couldn‘t find appropriate backend to handle uri *** and format None
+A：pip install soundfile
